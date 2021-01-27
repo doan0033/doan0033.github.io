@@ -12,7 +12,7 @@ html {
 nav#nav {
     background-color: rgb(221, 150, 150);
     border: none;
-    max-width: 1200px;
+    width: 1200px;
 }
 
 .nav#nav .nav-link {
