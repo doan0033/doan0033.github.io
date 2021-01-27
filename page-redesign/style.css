@@ -1,0 +1,58 @@
+/* Changing the html font */
+html {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Adjust the main width so it fits with nav and footer */
+#main.main{
+    max-width: 1260px;
+}
+
+/* Re-design nav color, remove border so it is more comfortable looking at */
+nav#nav {
+    background-color: rgb(221, 150, 150);
+    border: none;
+    max-width: 1200px;
+}
+
+.nav#nav .nav-link {
+    color: black;
+}
+
+/* Edit background to light almond color so I can let the color flow in the next sections */
+.home#home {
+    background-color: blanchedalmond;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Adjust text color and background color */
+#about.about{
+    color: black;
+    font-family: 'Playfair Display', serif;
+    background-color: rgb(236, 211, 174);
+    
+}
+/* Adjust img padding so it fits better to the text.
+   In here I also tried to adjust 'About Me' so it's more aligned to the left but failed */
+.about-image {
+   padding: 1em 2em;
+  }
+
+#contact.contact {
+    background-color: rgb(223, 150, 90) ;
+}
+
+/* Adjust the padding so the text seems more fit */
+.contact p {
+    font-size: 1.75em;
+    padding: 0 2em;
+}
+
+/* Added the same color as nav. Center footer to the entire section above */
+footer {
+    width: 1195px;
+    margin: 0px auto;
+    padding: 2em;
+    background-color: rgb(221, 150, 150) ;
+    
+}
