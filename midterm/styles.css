@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*-------------------------CSS RESET---------------------------*/
+
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #3C3B3A;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 4rem;
+}
+
+
+nav ul {
+    
+    width: auto;
+    float: right;
+    padding-right: 4rem;
+    padding-top: 4px;
+}
+
+nav li {
+    
+    padding: 10px; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    
+}
+
+a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.content {
+    width: 100%; 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .discover {
+    width: auto;
+    display: flex;
+    padding-right: 4rem;
+}
+
+.content .discover img {
+    max-width: 80%;
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+  
+.content .text {
+    position: relative;
+    width: 600px;
+    padding-left: 4rem;
+    
+}
+
+.content .text h1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #3C3B3A;
+}
+
+.content .text p {
+    font-size: 24px;
+    color: #3C3B3A;
+    padding-top: 2rem;
+}
+
+.button {
+    display: inline-block;
+    background: #26A682;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 8px 20px;   
+    border-radius: 40px;   
+}
+
+
+.activities li {
+    text-align: center; 
+    display: inline-block;
+    font-size: 12px;
+    height: 100%;
+    width: 24%;
+
+}
+
+.content ul {
+    margin-top: 25px;
+}
+
+
+.content .text a {
+    box-shadow: 5px 5px 5px grey;
+
+}
+
+
+.content ul li img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 25px;
+    height: 25px;
+ }
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  .section1 .row .column {
+      background-color: #F2F2F2;;
+  }
+  .row {
+      margin-left: 0px;
+      margin-right: 50px;
+
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    padding: 10px;
+    margin: 10px; 
+    display: table;
+    clear: both;
+  }
+
+
+  .column h2 {
+      font-size: 40px;
+      font-weight: 500;
+      font-style: oblique;
+  }
+
+  .column h3 {
+      margin-top: 10px;
+      color:#26A682;
+  }
+
+  .column p {
+      margin-top: 10px;
+      font-weight: 200;
+  }
+
+  .section2 {
+      background-color: #3C3B3A ;
+  }
+
+  .section2 img {
+      margin-top: 2rem;
+      margin-left: 4rem;
+      width: 20%;
+      border-radius: 50%;
+      border-style: solid;
+      border-width: medium;
+      border-color: white;
+  }
+  
+  .section3 {
+    background-color: white ;
+}
+
+.section3 .column {
+    background-color: white ;
+}
+  .column-2 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  .column-6 {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+
+  .section4 .column{
+    background-color: #3C3B3A;
+    height: 40px;
+    width:100%;
+  }
+  
+
+
+  
