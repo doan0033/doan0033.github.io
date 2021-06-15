@@ -69,6 +69,15 @@ form input[type="phone"] {
     font-weight: 400;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
 
 
 
