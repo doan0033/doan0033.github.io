@@ -43,13 +43,33 @@ form input[type="phone"] {
     box-sizing: border-box;
     border-radius: 11px ;
     border: 1px solid #F4F4F5 ;
-    color: #F4F4F5;
+    background: #F4F4F5;
     padding: 15px;
     margin-bottom: 1.25rem;
 }
 
-.signup-btn {
-    
+.input-container {
+    padding-top: 2px;
+    padding-bottom: 10px;
 }
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background: #57EEAB;
+    color: #333131;
+    font-weight: 700;
+    border-radius: 11px; 
+    border: none;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.login {
+    font-weight: 400;
+}
+
+
+
 
 
