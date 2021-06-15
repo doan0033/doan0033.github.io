@@ -69,17 +69,21 @@ form input[type="phone"] {
     font-weight: 400;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background: #FFFD8C;
+}
+
 .content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0%;
-    width: 100%;
-    background: #FFFD8C;
+.content .panel {
+    flex-basis: 50%;
 }
 
 .left {
