@@ -75,7 +75,20 @@ form input[type="phone"] {
     justify-content: space-evenly;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background: #FFFD8C;
+}
 
+.left {
+    padding-left: 40px;
+}
+
+.right {
+    padding-right: 40px;
+}
 
 
 
