@@ -109,10 +109,4 @@ form input[type="city"] {
     display: flex;
 }
 
-.right {
-    outline: 3px solid red;
-}
 
-.left {
-    outline: red solid 3px;
-}
