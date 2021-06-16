@@ -5,22 +5,26 @@ body {
     background-image: url('images/bg-image/scooter.svg');
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: center; 
+    background-position: center;
     background-size: 1200px 500px;
 }
 
 .logo img {
-    width: 80%;
     height: 100px;
     width: auto;
-    padding-left: 40px;
+    margin-left: 66px;
 }
 
 .main .h1 {
-    font-weight: 600 ;
+    font-size: 60px;
+}
+
+.main .h2 {
+    font-size: 35px;
 }
 
 .main .p {
+    font-size: 25px;
     font-weight: 100;
 }
 
@@ -31,14 +35,20 @@ body {
     padding-top: 2rem;
 }
 
+.card {
+    padding: 20px;
+    box-shadow: 5px 10px 15px #707070;
+    border-radius: 26px;
+}
+
 .text-screen {
-    width:260px;
+    width: 360px;
 }
 
 .form-screen {
-    
-    width : 500px;
-    margin-left: 60px;
+
+    width: 400px;
+    margin-left: 460px;
 }
 
 form input[type="text"],
@@ -48,8 +58,8 @@ form input[type="phone"] {
     display: block;
     width: 100%;
     box-sizing: border-box;
-    border-radius: 11px ;
-    border: 1px solid #F4F4F5 ;
+    border-radius: 11px;
+    border: 1px solid #F4F4F5;
     background: #F4F4F5;
     padding: 15px;
     margin-bottom: 1.25rem;
@@ -58,7 +68,7 @@ form input[type="phone"] {
 .input-container {
     padding-top: 2px;
     padding-bottom: 10px;
-    
+
 }
 
 .signup-btn {
@@ -67,7 +77,7 @@ form input[type="phone"] {
     background: #57EEAB;
     color: #333131;
     font-weight: 700;
-    border-radius: 11px; 
+    border-radius: 11px;
     border: none;
     padding: 1em;
     font-size: 1rem;
@@ -78,39 +88,40 @@ form input[type="phone"] {
 }
 
 footer {
-   
-    bottom: 0%;
+    bottom: fixed;
     width: 100%;
     background: #FFFD8C;
     justify-content: center;
     display: flex;
-    position:absolute;
+    position: absolute;
 }
 
 form input[type="hours"],
 form input[type="city"] {
     box-sizing: border-box;
-    border-radius: 11px ;
-    border: 1px solid #F4F4F5 ;
+    border-radius: 11px;
+    border: 1px solid #F4F4F5;
     background: #F4F4F5;
     color: #707070;
     margin-bottom: 1.25rem;
     height: 30px;
+    padding: 1em;
 }
 
 .calculate {
-    display:block;
+    display: block;
     width: 100%;
-    background:#FF8480;
+    height: auto;
+    background: #FF8480;
     color: white;
     font-weight: 700;
-    border-radius: 11px; 
+    border-radius: 11px;
     border: none;
-    padding: 1em;
-    font-size: 0.6rem;
+    padding: 10px;
 }
 
-.left, .right {
+.left,
+.right {
     display: flex;
 }
 
@@ -119,6 +130,7 @@ form input[type="city"] {
     padding: 5px;
 }
 
-.flex-container div,img {
+.flex-container div,
+img {
     padding: 10px;
 }
