@@ -1,7 +1,12 @@
-body{
+body {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-image: url('images/bg-image/scooter.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: 1200px 500px;
 }
 
 .logo img {
@@ -27,11 +32,13 @@ body{
 }
 
 .text-screen {
-    padding-left: 40px;
+    width:260px;
 }
 
 .form-screen {
-    padding-right: 40px;
+    
+    width : 500px;
+    margin-left: 60px;
 }
 
 form input[type="text"],
@@ -51,6 +58,7 @@ form input[type="phone"] {
 .input-container {
     padding-top: 2px;
     padding-bottom: 10px;
+    
 }
 
 .signup-btn {
@@ -70,12 +78,13 @@ form input[type="phone"] {
 }
 
 footer {
-    display: flex;
+   
     bottom: 0%;
     width: 100%;
     background: #FFFD8C;
-    padding-left: 40px;
-    padding-right: 40px;
+    justify-content: center;
+    display: flex;
+    position:absolute;
 }
 
 form input[type="hours"],
@@ -91,22 +100,25 @@ form input[type="city"] {
 
 .calculate {
     display:block;
+    width: 100%;
     background:#FF8480;
     color: white;
     font-weight: 700;
     border-radius: 11px; 
     border: none;
     padding: 1em;
-    font-size: 1rem;
+    font-size: 0.6rem;
 }
 
-.hour, .city, .calculate{
-    float: left;
-}
-
-.right img {
-    outline: 3px solid red;
+.left, .right {
     display: flex;
 }
 
+.flex-container {
+    display: flex;
+    padding: 5px;
+}
 
+.flex-container div,img {
+    padding: 10px;
+}
