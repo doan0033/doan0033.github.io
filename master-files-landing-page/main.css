@@ -1,136 +1,285 @@
-body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('images/bg-image/scooter.svg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: 1200px 500px;
+@media screen and (min-width: 480px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .logo img {
+        display: block;
+        width: 90px;
+        margin-left: 40px;
+        padding-top: 2em;
+        height: auto;
+    }
+
+    .bg-img {
+        padding-bottom: 2em;
+    }
+
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .welcome h1 {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .welcome p {
+        font-size: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    form input[type="text"],
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="phone"] {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 11px;
+        border: 1px solid #F4F4F5;
+        background: #F4F4F5;
+        padding: 15px;
+        margin-bottom: 1.25rem;
+    }
+    .checkbox-container {
+        padding-bottom: 10px;
+    }
+
+    .signup-btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background: #57EEAB;
+        color: #333131;
+        font-weight: 700;
+        border-radius: 11px;
+        border: none;
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+    .card {
+        padding: 2rem;
+        box-shadow: 5px 10px 15px #707070;
+        border-radius: 26px;
+    }
+
+    .text-screen, .form-screen {
+        width: 80%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        width: 100%;
+        background: #FFFD8C;
+    }
+
+    .footer-content h2 {
+        padding-top: 1em;
+        padding-left: 1em;
+        font-size: 20px;
+    }
+
+    .footer-content p {
+        padding-left: 1em;
+        font-size: 15px;
+    }
+    
+    form input[type="hours"] {
+        width: 10%;
+        border-radius: 11px;
+        border: 1px solid #F4F4F5;
+        background: #F4F4F5;
+        color: #707070;
+        margin-bottom: 1.25rem;
+        height: 30px;
+        padding-left: 1em;
+    }
+
+    form input[type="city"] {
+        width: 30%;
+        border-radius: 11px;
+        border: 1px solid #F4F4F5;
+        background: #F4F4F5;
+        color: #707070;
+        margin-bottom: 1.25rem;
+        height: 30px;
+        padding-left: 1em;
+    }
+
+    .flex-container {
+        padding-left: 1em;
+        display: block;
+    }
+    
+    .calculate {
+        width: 40%;
+        height: 50px;
+        background: #FF8480;
+        color: white;
+        font-weight: 700;
+        border-radius: 11px;
+        border: none;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .flex-container img {
+        padding: 5px;
+    }
 }
 
-.logo img {
-    height: 100px;
-    width: auto;
-    margin-left: 66px;
-}
+@media  screen and (min-width:1025px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-image: url('images/bg-image/scooter.svg');
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: 1200px 500px;
+    }
 
-.main .h1 {
-    font-size: 60px;
-}
+    .logo img {
+        height: 100px;
+        width: auto;
+        margin-left: 66px;
+    }
 
-.main .h2 {
-    font-size: 35px;
-}
-
-.main .p {
-    font-size: 25px;
-    font-weight: 100;
-}
-
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 2rem;
-}
-
-.card {
-    padding: 20px;
-    box-shadow: 5px 10px 15px #707070;
-    border-radius: 26px;
-}
-
-.text-screen {
-    width: 360px;
-}
-
-.form-screen {
-
-    width: 400px;
-    margin-left: 460px;
-}
-
-form input[type="text"],
-form input[type="text"],
-form input[type="email"],
-form input[type="phone"] {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 11px;
-    border: 1px solid #F4F4F5;
-    background: #F4F4F5;
-    padding: 15px;
-    margin-bottom: 1.25rem;
-}
-
-.input-container {
-    padding-top: 2px;
-    padding-bottom: 10px;
-
-}
-
-.signup-btn {
-    display: block;
-    width: 100%;
-    background: #57EEAB;
-    color: #333131;
-    font-weight: 700;
-    border-radius: 11px;
-    border: none;
-    padding: 1em;
-    font-size: 1rem;
-}
-
-.login {
-    font-weight: 400;
-}
-
-footer {
-    bottom: fixed;
-    width: 100%;
-    background: #FFFD8C;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-}
-
-form input[type="hours"],
-form input[type="city"] {
-    box-sizing: border-box;
-    border-radius: 11px;
-    border: 1px solid #F4F4F5;
-    background: #F4F4F5;
-    color: #707070;
-    margin-bottom: 1.25rem;
-    height: 30px;
-    padding: 1em;
-}
-
-.calculate {
-    display: block;
-    width: 100%;
-    height: auto;
-    background: #FF8480;
-    color: white;
-    font-weight: 700;
-    border-radius: 11px;
-    border: none;
-    padding: 10px;
-}
-
-.left,
-.right {
-    display: flex;
-}
-
-.flex-container {
-    display: flex;
-    padding: 5px;
-}
-
-.flex-container div,
-img {
-    padding: 10px;
+    .bg-img {
+        visibility: hidden;
+    }
+    
+    .main .h1 {
+        font-size: 60px;
+    }
+    
+    .main .h2 {
+        font-size: 35px;
+    }
+    
+    .main .p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 2rem;
+    }
+    
+    .card {
+        padding: 20px;
+        box-shadow: 5px 10px 15px #707070;
+        border-radius: 26px;
+    }
+    
+    .text-screen {
+        width: 360px;
+    }
+    
+    .form-screen {
+        width: 400px;
+        margin-left: 460px;
+    }
+    
+    form input[type="text"],
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="phone"] {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 11px;
+        border: 1px solid #F4F4F5;
+        background: #F4F4F5;
+        padding: 15px;
+        margin-bottom: 1.25rem;
+    }
+    
+    .input-container {
+        padding-top: 2px;
+        padding-bottom: 10px;
+    
+    }
+    
+    .signup-btn {
+        display: block;
+        width: 100%;
+        background: #57EEAB;
+        color: #333131;
+        font-weight: 700;
+        border-radius: 11px;
+        border: none;
+        padding: 1em;
+        font-size: 1rem;
+    }
+    
+    .login {
+        font-weight: 400;
+    }
+    
+    footer {
+        bottom: fixed;
+        width: 100%;
+        background: #FFFD8C;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+    }
+    
+    form input[type="hours"],
+    form input[type="city"] {
+        box-sizing: border-box;
+        border-radius: 11px;
+        border: 1px solid #F4F4F5;
+        background: #F4F4F5;
+        color: #707070;
+        margin-bottom: 1.25rem;
+        height: 30px;
+        padding: 1em;
+        width: auto;
+    }
+    
+    .calculate {
+        display: block;
+        width: 100%;
+        height: auto;
+        background: #FF8480;
+        color: white;
+        font-weight: 700;
+        border-radius: 11px;
+        border: none;
+        padding: 10px;
+    }
+    
+    .left,
+    .right {
+        display: flex;
+    }
+    
+    .flex-container {
+        display: flex;
+        padding: 5px;
+    }
+    
+    .flex-container div,
+    img {
+        padding: 10px;
+    }
+    
 }
