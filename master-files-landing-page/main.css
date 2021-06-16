@@ -1,3 +1,17 @@
+/* Starting CSS file */
+
+/* I started with desktop version then move down to mobile version */
+
+/* For tablet: I feel like the layout is similar without any adjustment
+so there is no media query for it*/
+
+/* Any missing design/ designs that are not match are those 
+that I couldn't find a way to achieve. Please give me feedback if possible */
+
+/* Mobile version */
+/* mobile version are mostly taken from the original design
+from desktop. Then I adjust it to fit into mobile layout */
+/* I try to minimize at much as possible to no repeat code */
 @media screen and (min-width: 480px) {
     body {
         padding: 0;
@@ -6,7 +20,6 @@
     }
 
     .logo img {
-        display: block;
         width: 90px;
         margin-left: 40px;
         padding-top: 2em;
@@ -140,6 +153,7 @@
     }
 }
 
+/* Desktop version */
 @media  screen and (min-width:1025px) {
     body {
         padding: 0;
@@ -151,6 +165,8 @@
         background-position: center;
         background-size: 1200px 500px;
     }
+    /* background img is a struggle so I figured out a way to
+    manipulate it as mockup: text - img - form using 'background-image' attribute*/
 
     .logo img {
         height: 100px;
@@ -158,10 +174,12 @@
         margin-left: 66px;
     }
 
+    /* bg-img in html hidden to avoid repeat elements */
     .bg-img {
         visibility: hidden;
     }
     
+    /* font-size/style/weight adjustment */
     .main .h1 {
         font-size: 60px;
     }
@@ -175,19 +193,15 @@
         font-weight: 100;
     }
     
+    /* split screen for main content using flex */
     .main {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding-top: 2rem;
     }
-    
-    .card {
-        padding: 20px;
-        box-shadow: 5px 10px 15px #707070;
-        border-radius: 26px;
-    }
-    
+
+    /* Setting specific width for 2 screens to assure layout mockup */
     .text-screen {
         width: 360px;
     }
@@ -196,7 +210,14 @@
         width: 400px;
         margin-left: 460px;
     }
-    
+
+    /* styling 'Apply now' card */
+    .card {
+        padding: 20px;
+        box-shadow: 5px 10px 15px #707070;
+        border-radius: 26px;
+    }
+
     form input[type="text"],
     form input[type="text"],
     form input[type="email"],
@@ -214,11 +235,10 @@
     .input-container {
         padding-top: 2px;
         padding-bottom: 10px;
-    
     }
     
+    /* styling button */
     .signup-btn {
-        display: block;
         width: 100%;
         background: #57EEAB;
         color: #333131;
@@ -229,10 +249,12 @@
         font-size: 1rem;
     }
     
+    /* font adjustment */
     .login {
         font-weight: 400;
     }
     
+    /* setting footer overall layout */
     footer {
         bottom: fixed;
         width: 100%;
@@ -241,7 +263,7 @@
         display: flex;
         position: absolute;
     }
-    
+    /* styling form */
     form input[type="hours"],
     form input[type="city"] {
         box-sizing: border-box;
@@ -255,6 +277,7 @@
         width: auto;
     }
     
+    /* style button */
     .calculate {
         display: block;
         width: 100%;
@@ -267,6 +290,7 @@
         padding: 10px;
     }
     
+    /* split screen for footer using flex */
     .left,
     .right {
         display: flex;
