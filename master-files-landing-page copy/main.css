@@ -91,6 +91,7 @@ form input[type="city"] {
 
 .calculate {
     display:block;
+    width: 100%;
     background:#FF8480;
     color: white;
     font-weight: 700;
@@ -100,19 +101,7 @@ form input[type="city"] {
     font-size: 1rem;
 }
 
-.hour, .city, .calculate{
-    float: left;
-}
-
-.right img {
-    outline: 3px solid red;
+.left, .right {
     display: flex;
-}
-
-.right {
-    outline: 3px solid red;
-}
-
-.left {
-    outline: red solid 3px;
+    
 }
