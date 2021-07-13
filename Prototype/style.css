@@ -109,6 +109,7 @@ p {
     bottom: 20px;
     transform: translateX(-50%);
     display: flex;
+    text-align: center;
 }
 
 .ice-cream li {
