@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    color: #000;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Karla';
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar a.nav-logo{
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Karla';
+    color:#000;
+    font-weight: bold;
+}
+
+.navbar ul {
+    float: right;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+
+.navbar ul li a:hover {
+    color: whitesmoke;
+}
+
+body {
+    background-color: #f2b6ba;
+}
+
+.content {
+    font-family: 'Karla';
+    color: #000; 
+    text-align: center;
+    margin: auto;
+    margin-top: 8%;
+    width: 80%;
+}
+
+h1  {
+    font-size: 70px;
+}
+
+h1 span {
+    color: #6b3511;
+}
+
+p {
+    margin-top: 10px;
+    width: 60;
+}
+
+/* .btns {
+    margin-top: 10px;
+    background: #d8d8d8;
+    cursor: pointer;
+    color: #191919;
+    padding: 12px 20px;
+    float: left;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.btns:hover {
+    background: #848482;
+    border-radius: 20px;
+} */
+
+.ice-cream {
+    font-family: 'Karla';
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.ice-cream li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.ice-cream li img {
+    max-width: 200px;
+    transition: transform 0.5s;
+}
+
+.ice-cream .two {
+    max-width: 250px;
+}
+
+.ice-cream li img:hover {
+    transform: translateY(-100px);
+    transition: 0.s;
+}
+
+    
