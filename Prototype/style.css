@@ -103,6 +103,10 @@ body {
     text-align: center;
 }
 
+.ice-cream button {
+    display: none;
+}
+
 .ice-cream li {
     list-style: none;
     display: inline-block;
@@ -252,3 +256,93 @@ section {
     max-width: 500px;
 }
 
+/* --------------MEDIA QUERY FOR MOBILE-------------- */
+/* --------------HOME PAGE--------------  */
+ @media only screen and (max-width: 768px) {
+
+    /* Adjust navbar to mobile size */
+    .navbar {
+        width: 100%;
+        height: 10vh;
+        padding-left: 60px;
+    }
+
+    /* Hide elements to design new layout */
+    .navbar ul li {
+        display: none;
+    }
+    .content, .social, .content{
+        display: none;
+    }
+
+    .two, .three, .five, .six {
+        display: none;
+    }
+
+    /* Design new layout */
+    /* Center ice cream cone 1 and title according to mobile layout */
+    .one {
+        padding-bottom: 30px;
+        margin-left: 40px;
+        display: inline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .four {
+        padding-bottom: 20px;
+        padding-left: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* Display button for mobile layout */
+    /* Animation and design for button */
+    .ice-cream .btn1 {
+        display: block;
+        width: 150px;
+        height: 50px;
+        border-radius: 18px;
+        font-weight: 500;
+        border: #fff;
+        color: #fff;
+        background-color: rgb(151, 96, 105);
+        box-shadow: inset 0 0 0 0 #fff;
+        transition: ease-out 1s;
+        font-size: 20px;
+        outline: #fff;
+        margin-left: 70px;
+    }
+
+    .btn1:hover {
+        box-shadow: inset 0 0 0 #fff;
+        color: black;
+    }
+
+    
+    /* --------------ABOUT US MOBILE SIZE-------------- */
+
+    /* Adjust width and display to fit with mobile layout */
+    .container {
+      width: 80%;
+    }
+    .about {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .about h1 {
+        line-height: none;
+    }
+
+    .about p {
+        line-height: none;
+    }
+    .about-img {
+        float: none;
+        width: 100%;
+    }
+
+  }
