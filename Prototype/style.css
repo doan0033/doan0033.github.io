@@ -1,12 +1,18 @@
-*{
+
+/* Reset and font family for whole website */
+* {
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Karla';
 }
 
+/* ------------HOME PAGE------------ */
+
+/* Navigation bar */
 .navbar {
     color: #000;
-    border-bottom: 0.5px solid gray;
+    border-bottom: 1px solid gray;
     width: 100%;
     line-height: 80px;
     height: 80px;
@@ -15,15 +21,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'Karla';
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #000;
-}
-
+/* Lily's Kitchen logo */
 .navbar a.nav-logo{
+    text-decoration: none;
     float: left;
     height: inherit;
     line-height: inherit;
@@ -36,6 +38,7 @@
     font-weight: bold;
 }
 
+/* About and Contact links */
 .navbar ul {
     float: right;
     list-style: none;
@@ -53,16 +56,20 @@
     text-align: center;
     min-width: 120px;
     padding: 0 30px;
+    text-decoration: none;
+    color: #000;
 }
 
 .navbar ul li a:hover {
-    color: whitesmoke;
+    color: #fff;
 }
 
+/* Pink background for whole layout */
 body {
     background-color: #f2b6ba;
 }
 
+/* Header and paragraph */
 .content {
     font-family: 'Karla';
     color: #000; 
@@ -72,38 +79,22 @@ body {
     width: 80%;
 }
 
-h1  {
+.content h1  {
     font-size: 70px;
+    text-shadow: -4px 4px white;
 }
 
-h1 span {
+.content h1 span {
     color: #6b3511;
 }
 
-p {
+ .content p {
     margin-top: 10px;
-    width: 60;
+    font-size: 18px;
 }
 
-/* .btns {
-    margin-top: 10px;
-    background: #d8d8d8;
-    cursor: pointer;
-    color: #191919;
-    padding: 12px 20px;
-    float: left;
-    border: 0;
-    border-radius: 20px;
-    margin-left: 10px;
-}
-
-.btns:hover {
-    background: #848482;
-    border-radius: 20px;
-} */
-
+/* Ice cream img layout with animation */
 .ice-cream {
-    font-family: 'Karla';
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -129,7 +120,135 @@ p {
 
 .ice-cream li img:hover {
     transform: translateY(-100px);
-    transition: 0.s;
+    transition: 0.5s;
 }
 
-    
+/* Social icons on right side */
+.social li {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    font-size: 28px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 5px 0;
+    color: black;
+}
+
+/* ------------CONTACT PAGE------------ */
+
+/* background img and 100vh for section to achieve full screen background cover */
+section {
+    background-image: url(images/rikonavt-K3x_AkLVTAo-unsplash.jpg);
+    background-size: 100% ;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Center and style h1, icons, contact list and map */
+/* H1 */
+.info {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.info h1 {
+    font-size: 70px;
+}
+
+/* Icons */
+.icons {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    list-style: none;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.icons a {
+    color: black;
+}
+
+/* Contact list */
+.contact {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.contact li {
+    line-height: 2rem;
+    font-weight: 800;
+}
+
+/* Embedded map */
+.map {
+    margin-top: 20px;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* ------------ABOUT PAGE------------ */
+
+/* Set width and height for biggest div container*/
+.about-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Container for text */
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+/* Text box */
+.about {
+    float: left;
+    width: 40%;
+}
+
+.about h1 {
+    font-size: 70px;
+    line-height: 1.5em;
+}
+
+.about p {
+    line-height: 1.5em;
+}
+
+
+/* Img box */
+.about-img {
+    float: right;
+    width: 50%;
+}
+
+.about-img img {
+    max-width: 500px;
+}
+
