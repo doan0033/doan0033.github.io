@@ -258,7 +258,7 @@ section {
 
 /* --------------MEDIA QUERY FOR MOBILE-------------- */
 /* --------------HOME PAGE--------------  */
- @media only screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) {
 
     /* Adjust navbar to mobile size */
     .navbar {
