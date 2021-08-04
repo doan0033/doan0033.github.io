@@ -1,6 +1,18 @@
 <!DOCTYPE HTML>
+<!--******************************************************************************************************
+********************************************************************************************************
+    Author:         CHI DOAN
+    Date:           Aug 4, 2021   
+    File name:      chi.html  
+    Assignment#:    1
+    Link:           github.com
+    Version:        1.0
+    References:     N/A
+    Revisions:      N/A
+    Description:    This is a bootstrap page, demonstrating the useful of bootstrap
+********************************************************************************************************
+*******************************************************************************************************-->
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,23 +20,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 
+
 <body>
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- HEADER (NAVIGATION) SECTION --------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
     <header>
-        <!-- Nav bar -->
         <nav class="navbar navbar-expand-lg  bg-light">
+
+            <!-- Bootstrap Icon. Using official icon from Bootstrap site, reference svg link below -->
             <a class="navbar-brand" href="#">
                 <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 <b>Bootstrap Wiki</b>
             </a>
-            <!-- Nav components -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+            <!-- Icon to expand nav bar when navbar collapsed (on smaller screen) -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse" id="navDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -40,37 +59,44 @@
         </nav>
     </header>
 
-
-    <!--Jquery reference from: https://www.w3schools.com/jquery/jquery_fade.asp-->
+    
+    <!---------------------------------------------------------------------------------------------------------->
+    <!------------------------------ SUCCESS MESSAGE WHEN DONATE SUCCESSFULLY ---------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-- Green alert message displayed on top of welcome section -->
     <div class="alert alert-success" id="thank-message">
-        <button class="close" data-dismiss="alert" type="button" >x</button>
-        <strong>Thank you</strong>
-        We apreciate your contribution for our material
-     </div>
-    <script>
-    $(document).ready(function() {
-        $("#thank-message").hide();
-        $("#donate").click(function showAlert() {
-            $("#thank-message").fadeIn().delay(2500)
-            $("#thank-message").first().fadeOut(500);
+        <button class="close" data-dismiss="alert" type="button" >&times;</button>
+        <strong>Thank you</strong> We apreciate your contribution for our material
+    </div>
+
+    <!-- Jquery functions reference from: https://www.w3schools.com/jquery/jquery_fade.asp -->
+    <!-- Script to display success alert when donate success. Display the message and hide it after 2.5 sec -->
+    <script> 
+        $(document).ready(function() {
+            $("#thank-message").hide();
+            $("#donate").click(function showAlert() {
+                $("#thank-message").fadeIn().delay(2500)
+                $("#thank-message").first().fadeOut(500);
+            });
         });
-      });
     </script>
 
-    
 
-    <!------------------------------------ BODY ------------------------------------>
     <main role="main">
-
+        <!---------------------------------------------------------------------------------------------------------->
+        <!-------------------------------------- WELCOME SECTION --------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------->
         <section class="">
             <div class="container">
                 <div class="row">
+                    <!-- Grid system contains 2 columns -->
+                    <!-- Bootstrap icon image column -->
                     <div class="col-md-4">
+                        <br><img class="card-img-top" src="https://i.stack.imgur.com/dMXbE.png"alt="Card image cap"><br>
                         <br>
-                        <img class="card-img-top  " src="https://i.stack.imgur.com/dMXbE.png"
-                            alt="Card image cap">
-                        <br><br>
                     </div>
+
+                    <!-- Welcome text column -->
                     <div class="col-md-8">
                         <h1 class="display-4"><br>Welcome,</h1>
                         <p class="lead text-muted">This is Bootstrap Wiki, your one stop page to get to know about Bootstrap! Find related articles, videos and tutorial in just one scroll.</p>
@@ -83,11 +109,10 @@
             </div>
         </section>
 
-        
 
-    
-
-
+        <!---------------------------------------------------------------------------------------------------------->
+        <!-------------------------------------- ARTICLES / CARDS SECTION ------------------------------------------>
+        <!---------------------------------------------------------------------------------------------------------->
         <div class="album py-5 bg-light">
             <h1 class="text-center">Articles</h1>
             <br>
@@ -146,10 +171,11 @@
                     </div>
                 </div>
 
-                <!-- Video 1 -->
-                <hr><br>
-                <h1 class="text-center">Videos</h1>
-                <br>
+                <!---------------------------------------------------------------------------------------------------------->
+                <!------------------------------------------- VIDEOS SECTION ----------------------------------------------->
+                <!---------------------------------------------------------------------------------------------------------->
+                <!-- First video -->
+                <hr><br><h1 class="text-center">Videos</h1><br>
                 <div class="row">
                     <div class="col-md-7 order-md-2">
                         <h2 class="text-muted">What is Bootstrap?</span></h2>
@@ -160,9 +186,9 @@
                     </div>
                 </div>
                 
-                <!-- Video 2 -->
+                <!-- Second video -->
                 <hr><br>
-                <div class="row ">
+                <div class="row">
                     <div class="col-md-7 order-md-1 ">
                         <h2 class="text-muted">Where can I learn Bootstrap?</span></h2>
                         <p class="lead">There are many sources to learn Bootstrap, you can take a course or even learn it yourself! In this video by Tradversy Media is a crash course to get you on the Bootstrap journey. </p>
@@ -172,11 +198,13 @@
                     </div>
                 </div>
 
-                <br>
-                <hr>
-                <!-- Table -->
-                <h2 class="">Why you should choose <span class="text-muted">Bootstrap?</span></h2>
-                <br>
+                
+                <!---------------------------------------------------------------------------------------------------------->
+                <!-------------------------------------------- TABLE SECTION ----------------------------------------------->
+                <!---------------------------------------------------------------------------------------------------------->
+                <br><hr>
+                <h2 class="">Why you should choose <span class="text-muted">Bootstrap?</span></h2><br>
+
                 <table class="table table-hover">
                     <thead class="thead-light">
                       <tr>
@@ -188,130 +216,121 @@
                     <tbody>
                       <tr>
                         <th scope="row">Time</th>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td>Bootstrap save me more time</td>
+                        <td>Regular CSS took long time for work to be done</td>
                       </tr>
                       <tr>
-                        <th scope="row">Gi do gi do</th>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <th scope="row">Money</th>
+                        <td>Cheaper using Bootstrap</td>
+                        <td>More expensive</td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
+                        <th scope="row">Energy</th>
                         <td>the Bird</td>
                         <td>@twitter</td>
                       </tr>
                     </tbody>
-                  </table>
-                  
-                  
+                </table> 
             </div>
         </div>
-
-        
 
     </main>
 
 
     
     
-
-    <footer class="text-muted text-white bg-dark " style="height:80px">
+    <!---------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------- FOOTER SECTION ----------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <footer class="text-muted text-white bg-dark" style="height:80px">
         <br>
         <div class="container">
-            <p class="float-right">
-                <a href="#">Back to top</a>
-            </p>
+            <p class="float-right"><a href="#">Back to top</a></p>
             <p>Copyright &copy; Chi Doan</p>
-
         </div>
     </footer>
 
 
-
-
-    <!--CHI MODAL--------------------------------------------------------------------------------->
-    <div class="modal" id="myModal">
+    <!---------------------------------------------------------------------------------------------------------->
+    <!------------------------------------- DONATE (MODAL) SECTION --------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <div class="modal" id="donateModal">
         <div class="modal-dialog">
-        <div class="modal-content">
-    
-            <!-- Modal Header -->
-            <div class="modal-header">
-            <h4 class="modal-title">Welcome to Bootstrap Wiki!</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-    
-            <!-- Modal body -->
-            <div class="modal-body">
-            This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below
-                <hr>
-                <div class="mb-3 row">
-                    <label for="staticEmail" class="col-sm-4 col-form-label">Donor name</label>
-                    <div class="col-sm-8">
-                    <input type="text" class="form-control" id="staticEmail" placeholder="e.g. John Smith">
-                    </div>
+            <div class="modal-content">
+        
+                <!----------------------- DONATE HEADER --------------------->
+                <div class="modal-header">
+                <h4 class="modal-title">Welcome to Bootstrap Wiki!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="mb-3 row">
-                    <label for="staticEmail2" class="col-sm-4 col-form-label">Donor type</label>
-                    <div class="col-sm-8">
-                        <div class="form-group">
-                            <select class="form-control" id="sel1">
-                              <option>Once</option>
-                              <option>Weekly</option>
-                              <option>Monthly</option>
-                             
-                            </select>
-                          </div>
+        
+                <!----------------------- DONATE BODY ----------------------->
+                <div class="modal-body">
+                    This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below
+                    <hr>
+                    <!-- DONOR NAME -->
+                    <div class="mb-3 row">
+                        <label for="donor-name" class="col-sm-4 col-form-label">Donor name</label>
+                        <div class="col-sm-8">
+                        <input type="text" class="form-control" id="donor-name" placeholder="e.g. John Smith">
+                        </div>
+                    </div>
+
+                    <!-- DONATION TYPE -->
+                    <div class="mb-3 row">
+                        <label class="col-sm-4 col-form-label">Donor type</label>
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Once</option>
+                                    <option>Weekly</option>
+                                    <option>Monthly</option>                         
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DONATION AMOUNT -->
+                    <div class="mb-3 row">
+                        <label for="donation-amount" class="col-sm-4 col-form-label">Amount</label>
+                        <div class="col-sm-8">
+                        <input type="number" placeholder="e.g. 1,000,000,000$" class="form-control" id="donation-amount" >
+                        </div>
+                    </div>
+
+                    <!-- CREDIT CARD -->
+                    <div class="mb-3 row">
+                        <label for="credit-number" class="col-sm-4 col-form-label">Credit card#</label>
+                        <div class="col-sm-8">
+                            <input id="credit-number" type="password" class="form-control" placeholder="#### #### #### ####">
+                        </div>
                     </div>
                 </div>
 
-                <div class="mb-3 row">
-                    <label for="staticEmail2" class="col-sm-4 col-form-label">Amount</label>
-                    <div class="col-sm-8">
-                    <input type="number" class="form-control" id="staticEmail2" placeholder="e.g. 1,000,000,000$">
-                    </div>
+        
+                <!----------------------- DONATE FOOTER ----------------------->
+                <div class="modal-footer">
+                <button data-dismiss="modal" type="button" class="btn btn-danger" id="donate">Donate</button>
                 </div>
-                <div class="mb-3 row">
-                    <label for="inputPassword" class="col-sm-4 col-form-label">Credit card#</label>
-                    <div class="col-sm-8">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="#### #### #### ####">
-                    </div>
-                </div>
+                
             </div>
-
-            
-    
-            <!-- Modal footer -->
-            <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal" id="donate">Donate</button>
-            </div>
-            
-        </div>
         </div>
     </div>
 
 
 
     
-
-
-
-    
+    <!---------------------------------------------------------------------------------------------------------->
+    <!------------------------------------- SCRIPT SECTION ----------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-- Script to display donate modal when page finished loading-->
     <!-- Reference from: https://stackoverflow.com/questions/28068119/bootstrap-modal-opening-on-page-load-->
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#myModal').modal('show');
+            $('#donateModal').modal('show');
         });
     </script>
-
-
-
-
-
-
-
-
-    <!-- Placed at the end of the document so the pages load faster -->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
@@ -324,3 +343,6 @@
 </body>
 
 </html>
+<!-----------------------------------------|-------------|-------------------------------------------------->
+<!-----------------------------------------| END OF FILE |-------------------------------------------------->
+<!-----------------------------------------|-------------|-------------------------------------------------->
