@@ -17,13 +17,21 @@ There are so many things that I have learnt. There are also many that I will hav
 --------------------------------------------------------------
 Below are assets and resources that I have used that are not mine:
 
-<!-- Background GIF -->
+Font | Retrieved from Google Font
+
+Background GIF | Video retrieved from Videezy
 https://www.videezy.com/backgrounds/36765-beautiful-flight-through-the-digital-tunnel-with-numbers?fbclid=iwar3hlhdva9ko8parygbmmpd0z4blctuegvgnol8nkq2nlux4z8tkxxoegvm
 
-<!-- My project cards -->
+My project cards | Photos retrieved from Unsplash
 https://images.unsplash.com/photo-1526378787940-576a539ba69d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80
 
 https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=935&q=80
 
 https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80
 
+Mockup Gallery | Photo retrieved from Unsplash
+https://images.unsplash.com/photo-1535381273077-21e00c27b1b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80
+
+https://images.unsplash.com/photo-1561015315-795020fb7d49?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80
+
+https://images.unsplash.com/photo-1516131206008-dd041a9764fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80
