@@ -42,3 +42,9 @@ https://codepen.io/brandonisgreen/pen/CHJza
 
 Scrollspy and smooth scrolling by Florin Mina
 https://codepen.io/FlorinM/pen/YwaWYO
+
+Reference for Modal
+https://stackoverflow.com/questions/28068119/bootstrap-modal-opening-on-page-load--
+
+Inner text for Modal
+https://www.w3schools.com/jsref/prop_node_innertext.asp

@@ -1,46 +1,39 @@
-<!doctype html>
+<!DOCTYPE HTML>
+<!--******************************************************************************************************
+**********************************************************************************************************
+    Author:         CHI DOAN
+    Date:           Aug 13, 2021   
+    File name:      index.html  
+    Assignment#:    Final
+    Link:           github.com
+    Version:        1.0
+    References:     N/A
+    Revisions:      N/A
+    Description:    This is my personal portfolio
+**********************************************************************************************************
+*******************************************************************************************************-->
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.84.0">
-  <title>Web Portfolio</title>
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Chi Web Portfolio</title>
 
-
-  <!-- Bootstrap core CSS -->
-  <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/apple-touch-icon.png"
-    sizes="180x180">
-  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32"
-    type="image/png">
-  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16"
-    type="image/png">
-  <link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
-  <link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"
-    color="#7952b3">
-  <link rel="icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/favicon.ico">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <meta name="theme-color" content="#7952b3">
+  <!-- Google font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-  </script>
+  
+  <!-- Bootstrap and Jquery -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+  <!-- Animate.CSS library and external CSS file -->
+  <link href="main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Customized Javascript for pretty affect. This script tag is cited online, credits could be found below -->
   <script>
-    // Inspiration and code from Brandonisgreen
-    //https://codepen.io/brandonisgreen/pen/CHJza
+    // Inspiration and code from Brandonisgreen https://codepen.io/brandonisgreen/pen/CHJza 
+    // This code use to make an appear affect for my headings
     $(document).ready(function () {
       var theLetters = "comtamcomsuonbunbohuelamonchoquamon"; //You can customize what letters it will cycle through
       var ctnt = "I'm a professional web developer in Ottawa"; // Your text goes here
@@ -84,9 +77,8 @@
       }
     });
 
-    // MAKING JAVASCRIPT SMOOTH SCROLL
-    // Cite from https://codepen.io/FlorinM/pen/YwaWYO
-    // scrollspy section
+    // Making webpage scroll smoothly when using scrollspy
+    // This code section cited from https://codepen.io/FlorinM/pen/YwaWYO
     (function ($) {
       //variable that will hold the href attr of the links in the menu
       var sections = [];
@@ -135,167 +127,189 @@
       }
     }
   </script>
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-
-  <!-- Custom styles for this template -->
-  <!-- Navigation bar -->
-  <link href="main.css" rel="stylesheet">
 </head>
+
+
 <body>
+  <!---------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- HEADER (NAVIGATION) SECTION --------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------->
+  <!--Site header  section cited from https://getbootstrap.com/docs/4.0/examples/product/-->
   <header class="site-header sticky-top py-1">
-    <nav id="navi" class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2" href="#"></a>
+    <nav id="navi" class="container d-flex flex-column flex-md-row justify-content-between lead">
       <a class="py-2 d-none d-md-inline-block" href="#home">Home</a>
-      <a class="py-2 d-none d-md-inline-block" href="#about">About me</a>
+      <a class="py-2 d-none d-md-inline-block" href="#about">About</a>
+      <a class="py-2 d-none d-md-inline-block" href="#skill">Skills</a>
       <a class="py-2 d-none d-md-inline-block" href="#project">Projects</a>
-      <a class="py-2 d-none d-md-inline-block" href="#art">My Mockups</a>
-      <a class="py-2 d-none d-md-inline-block" href="#contact">Contact me</a>
-      <a class="py-2 d-none d-md-inline-block" href="#skill">My Skills</a>
+      <a class="py-2 d-none d-md-inline-block" href="#art">Mockups</a>
+      <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Main content start here! -->
   <main>
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- WELCOME SECTION --------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
     <div id="home"></div>
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100 align-items-center">
-        </div>
-    <!-- Animation text -->
-    </header>
+    <!-- Animation background cited from: https://startbootstrap.com/snippets/full-image-header**/ -->
+    <header class="masthead"></header>
     <div class="bg-text">
       <h1 class="display-2 fw-normal animate__animated animate__fadeInDown">Hi, my name is Chi!</h1>
-      <p class="lead" style="font-size: 40px;">
-        <div id="output"></div>
-      </p>
-      <a class="btn btn-outline-secondary" href="#">Get Started</a>
+      <p id="output" class="lead"></p>
+      <a class="btn btn-outline-secondary" href="#about">Get Started</a>
     </div>
-    <div id="foo" class="position-relative overflow-hidden p-3 p-md-5   bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-      </div>
+    
+    <hr>
 
-      <div class="product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-
-    <!-- About Card -->
-    <div id="about"></div>
-    <center style="margin: 25px; margin-top: 90px;">
-      <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Who Am I?</h1>
-    </center>
-    <div class="card" style=" margin-right: 70px; margin-left: 70px; border-radius: 145px;">
-      <div class="row" style=" margin: 15px;">
-        <div class="col-sm-3 card-column">
-          <img style="width: 100%; border-radius: 80%; margin: 20px;"
-            src="https://scontent.fyzd1-3.fna.fbcdn.net/v/t1.6435-9/61216944_174895980192502_5175926253038862336_n.jpg?_nc_cat=105&ccb=1-4&_nc_sid=174925&_nc_ohc=-psZsqNBVWUAX8-tcSn&tn=FWNsnmXHk8ksdlM_&_nc_ht=scontent.fyzd1-3.fna&oh=365a660a01749e1e0a7c087cb03b986c&oe=613D22D5">
-        </div>
-        <div class="col-sm-9 card-column" style="padding-left: 20px; margin-top: 10px;">
-          <h1 class="display-6">The best developer for you!</h1>
-          <p class="lead">
-            Welcome to my portfolio!
-            I am an aspiring UX/UI and Front End designer locating in Ottawa.
-            I’m packed with skill sets varies from User Research, Web development, Graphic Design and even Video Editing.
-            Scroll down to see my works and decide if you would want me on your journey!
-          </p>
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- ABOUT SECTION ----------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <section style="background-color: #777575; padding-top: 100px; padding-bottom: 100px;">
+      <div id="about"></div>
+      <center style="margin: 25px; margin-top: 90px;">
+        <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Who Am I?</h1>
+      </center>
+      <div class="card" style=" margin-right: 70px; margin-left: 70px; border-radius: 145px;">
+        <div class="row" style=" margin: 15px;">
+          <div class="col-sm-12 col-md-5 col-lg-3 card-column ">
+            <img style=" border-radius: 80%;  width: 98%; margin-right: 70px; "
+              src="image/IMG_6184 2.JPG">
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-9 card-column" style="padding-left: 20px; margin-top: 10px;">
+            <h1 class="display-6">The best developer for you!</h1>
+            <p class="lead">
+              Welcome to my portfolio!
+              I am an aspiring UX/UI and Front End designer locating in Ottawa.
+              I’m packed with skill sets varies from User Research, Web development, Graphic Design and even Video Editing.
+              Scroll down to see my works and decide if you would want me on your journey!
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+    <hr>
 
-  <!-- Skill card -->
-    <div id="skill"></div>
-    <center style="margin: 25px; margin-top: 90px;">
-      <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">My Skills</h1>
-    </center>
-    <ul class="list-group" style="margin-right: 70px; margin-left: 70px;  border-radius: 145px;">
-      <li class="list-group-item" style="padding-left: 250px; padding-right: 150px">
-        <br>
-        <b>Programming languages</b>
-        &bull;HTML, CSS, JavaScript<br><br>
 
-        <b>Frameworks</b>
-        &bull;Bootstrap<br><br>
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- SKILL SECTION --------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <section style="background-color: #777575; padding-top: 100px; padding-bottom: 100px;">
+      <div id="skill"></div>
+      <center style="margin: 25px; margin-top: 90px;">
+        <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">My Skills</h1>
+      </center>
+      <ul class="list-group " style="margin-right: 70px; margin-left: 70px;  border-radius: 145px;">
+        <li class="list-group-item lead " >
+          <div class="justify-content-center d-flex ">
+          <br>
+          <b>Frameworks</b>
+          &bull;Bootstrap<br><br>
+          </div>
+        </li>
 
-        <b>Version controls</b>
-        &bull;Git : Github<br><br>
+        <li class="list-group-item lead " >
+          <div class="justify-content-center d-flex ">
+          <br>
+          <b>Softwares</b>
+          &bull;Visual Studio, Adobe XD, Figma<br><br>
+          </div>
+        </li>
 
-        <b>Softwares</b>
-        &bull;Visual Studio, Adobe XD, Figma<br><br>
-      </li>
-    </ul>
+        <li class="list-group-item lead " >
+          <div class="justify-content-center d-flex ">
+          <br>
+          <b>Programming languages</b>
+          &bull;HTML, CSS, JavaScript<br><br>
+          </div>
+        </li>
 
+        <li class="list-group-item lead " >
+          <div class="justify-content-center d-flex ">
+          <br>
+          <b>Version controls</b>
+          &bull;Git : Github<br><br>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <hr> 
+    
+
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- PROJECTS SECTION --------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
     <!-- Projects card -->
+    <section style="background-color: rgb(207, 211, 192); padding-top: 100px; padding-bottom: 100px;">
     <div id="project"></div>
     <center style="margin: 25px; margin-top: 90px;">
       <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">My projects</h1>
     </center>
 
     <div class="row" style="margin-left: 15px; margin-right: 15px;">
-      <div class="col-sm-4 card-column">
-        <div class="project card text-center"
-          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img style="width:100%" class="card-img-top"
+      <div class="col-sm-12 col-md-6 col-lg-4 card-column">
+        <div class="project card text-center"  
+        onclick="openModal('UX/UI', 'This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below', 'https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80')"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); height: 550px;">
+          <img style="width:100%" class="card-img-top" height="350px" width="400px"
             src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
             alt="Card image cap" style="height: 180px; object-fit: contain; margin: 10px;">
           <div style="margin-left: 15px; margin-right: 15px;">
             <div class="card-body">
               <h1 class="display-6">UX/UI</h1>
-              <p>Create mobile app design UX/UI</p>
+              <p  class="lead">Create mobile app design UX/UI</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-4 card-column">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-column">
         <div class="project card text-center"
-          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img style="width:100%" class="card-img-top"
+        onclick="openModal('Landing Page', 'This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below', 'https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=935&q=80')"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); height: 550px;">
+          <img style="width:100%" class="card-img-top" height="350px" width="400px"
             src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=935&q=80"
             alt="Card image cap" style="height: 180px; object-fit: contain; margin: 10px;">
           <div style="margin-left: 15px; margin-right: 15px;">
             <div class="card-body">
               <h1 class="display-6">Landing Page</h1>
-              <p>Create responsive web design</p>
+              <p class="lead">Create responsive web design</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-sm-4 card-column">
+      <div class="col-sm-12 col-md-6 col-lg-4 card-column">
         <div class="project card text-center"
-          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-          <img style="width:100%" class="card-img-top"
+        onclick="openModal('UX Research', 'This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below', 'https://images.unsplash.com/photo-1526378787940-576a539ba69d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80')"
+          style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); height: 550px;">
+          <img style="width:100%" class="card-img-top" height="350px" width="400px"
             src="https://images.unsplash.com/photo-1526378787940-576a539ba69d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1949&q=80"
             alt="Card image cap" style="height: 180px; object-fit: contain; margin: 10px;">
           <div style="margin-left: 15px; margin-right: 15px;">
             <div class="card-body">
               <h1 class="display-6">UX Research</h1>
-              <p>Conduct UX research, personas, documentation</p>
+              <p class="lead">Conduct UX research, personas, documentation</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </section>
+    <hr>
 
-    <!-- Horizontal Scroll Mini Art Gallery -->
+
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- GALLERY SECTION --------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <section style="background-color: rgb(207, 211, 192); padding-top: 100px; padding-bottom: 100px;">
     <div id="art"></div>
     <center style="margin: 25px; margin-top: 90px;">
       <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">My Mockups Galery</h1>
     </center>
 
-    <div class="card" style=" margin-right: 70px; margin-left: 70px; border-radius: 145px;">
+    <!--Carousel cited from Bootsrap offical documentation: https://getbootstrap.com/docs/5.0/components/carousel/-->
+    <div class="card" style=" margin-right: 70px; margin-left: 70px; border-radius: 145px; ">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding-left: 45px;
       padding-right: 45px;">
         <ol class="carousel-indicators">
@@ -305,7 +319,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100"
+            <img class="d-block w-100" style="height:850px"
               src="https://images.unsplash.com/photo-1535381273077-21e00c27b1b7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
               alt="First slide">
           </div>
@@ -330,46 +344,111 @@
         </a>
       </div>
     </div>
+    </section>
+    <hr>
 
 
-    <!-- Contact form -->
+    <!---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------- CONTACT SECTION --------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------->
+    <section style="background-color: black; padding-top: 100px; padding-bottom: 100px;">
     <div id="contact"></div>
     <center style="margin: 25px; margin-top: 90px;">
-      <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold;">Contact me</h1>
+      <h1 class="display-2" style="font-family: 'Montserrat', sans-serif; font-weight: bold; color: white;">Contact me</h1>
     </center>
 
-    <div class="card" style=" margin-right: 70px; margin-left: 70px; padding: 80px; border-radius: 145px; ">
       <div class="d-flex justify-content-center">
-        <form style="width: 80%;">
+        <form style="width: 60%;">
           <div class="form-group">
-            <label for="formGroupExampleInput" class="col-form-label-lg">Name</label>
-            <input type="text" class="form-control col-form-label-lg" id="formGroupExampleInput"
+            <label for="formGroupExampleInput" class="col-form-label-lg"></label>
+            <input type="text" class="form-control col-form-label-lg input-lg" id="formGroupExampleInput"
               placeholder="Your name">
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2" class="col-form-label-lg">Email</label>
-            <input type="text" class="form-control col-form-label-lg" id="formGroupExampleInput2"
+            <label for="formGroupExampleInput2" class="col-form-label-lg"></label>
+            <input type="text" class="form-control col-form-label-lg input-lg" id="formGroupExampleInput2"
               placeholder="Your email">
           </div>
           <div class="form-group">
-            <label for="formGroupExampleInput2" class="col-form-label-lg">Phone number</label>
-            <input type="text" class="form-control col-form-label-lg" id="formGroupExampleInput2"
+            <label for="formGroupExampleInput2" class="col-form-label-lg"></label>
+            <input type="text" class="form-control col-form-label-lg input-lg" id="formGroupExampleInput2"
               placeholder="Your phone number">
           </div>
           <div class="form-group">
-            <label class="col-form-label-lg " for="exampleFormControlTextarea1">Your message</label>
-            <textarea class="form-control col-form-label-lg" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label class="col-form-label-lg " for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control col-form-label-lg input-lg" id="exampleFormControlTextarea1" placeholder="Your message"rows="3"></textarea>
           </div>
         </form>
       </div>
-    </div>
+    </section>
+    <hr>
   </main>
 
-  <!-- End main content -->
 
-  <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  <!---------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------- FOOTER SECTION ---------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------->
+  <footer class="text-muted bg-dark" style="padding: 25px; ">
+    <div class="container" style="color: white;">
+      <p class="float-right lead">
+        <a href="#home" style="color: white; text-decoration: none;">Go to top</a>
+      </p>
+      <p class="lead">Design by Chi Doan &copy;</p>
+    </div>
+  </footer>
+
+
+  <!---------------------------------------------------------------------------------------------------------->
+  <!------------------------------------- PROJECT DETAIL (MODAL) SECTION ------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------->
+  <div class="modal" id="projectModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!----------------------- PROJECT HEADER --------------------->
+            <div class="modal-header">
+            <h4 class="modal-title" id="projectName">Jenn Cooking Mobile app</h4>
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+    
+            <!----------------------- PROJECT BODY ----------------------->
+            <div class="modal-body">
+                <p id="projectDescription">
+                This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below
+                This wiki book is written by Chi Doan. If you love this channel, please like and subscribe to my Youtube channel and donate to the form below
+                </p>
+                <br>
+                <img id="projectImage" style="width:100%" class="card-img-top" height="350px" width="400px"
+                src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+                alt="Card image cap" style="height: 180px; object-fit: contain; margin: 10px;">
+            </div>       
+        </div>
+    </div>
+  </div>
+
+
+  <!---------------------------------------------------------------------------------------------------------->
+  <!------------------------------------- SCRIPT SECTION ----------------------------------------------------->
+  <!---------------------------------------------------------------------------------------------------------->
+  <!-- Script to display modal -->
+  <!-- Reference from: https://stackoverflow.com/questions/28068119/bootstrap-modal-opening-on-page-load-->
+  <script type="text/javascript">
+    function openModal(projectName, projectDescription, projectImage) {
+      // Show the modal
+      $('#projectModal').modal('show');
+
+      // Display little animation
+      document.getElementById('projectModal').className = ' modal animate__animated animate__bounceIn';
+
+      // Setting the inner text of the modal. Reference from https://www.w3schools.com/jsref/prop_node_innertext.asp
+      document.getElementById('projectName').innerText=projectName
+      document.getElementById('projectDescription').innerText=projectDescription
+      document.getElementById('projectImage').src=projectImage
+    }
   </script>
 </body>
-
 </html>
+<!-----------------------------------------|-------------|-------------------------------------------------->
+<!-----------------------------------------| END OF FILE |-------------------------------------------------->
+<!-----------------------------------------|-------------|-------------------------------------------------->
